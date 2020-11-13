@@ -1,0 +1,37 @@
+OAUTH2_ENDPOINT:
+ - DEV: /uaa/oauth/token?grant_type=client_credentials
+ - QA: /uaa/oauth/token?grant_type=client_credentials&scope=APISecured
+ - PROD: /uaa/oauth/token?grant_type=client_credentials&scope=ol-admin-full-access
+
+AUTHORIZATION:
+ - DEV: Basic aW5ub3ZhY2lvbjozODk0ZTk0YTdiYmI0M2MyYWFkYmQ2Y2VjNWI0NTI4Yg==
+ - QA:  Basic bjV1c2VyOmZFWU5zTTBGOFEyWGdWaA==
+ - PROD: Basic bW1jX2JhY2tlbmQ6ODAzNWViNDQtYWZmNC0xMWU3LWFiYzQtY2VjMjc4YjZiNTBh
+  
+IP_API_MANAGEMENT:
+ - DEV: http://192.168.251.30:9080
+ - QA:  https://ccblayerqa.credicorpbank.com:9080
+ - PROD: https://ccblayer.credicorpbank.com:9080
+
+ # SMTP para Desarrollo 
+smtp.host.dev:     smtp.gmail.com
+smtp.port.dev:     587
+smtp.user.dev:     lopera.william@gmail.com
+smtp.password.dev: liodcujzjksvomqo
+smtp.from.dev:     lopera.william@gmail.com
+smtp.to.dev:       william.lopera@pranical.com, hapena@credicorpbank.com
+
+# SMTP para QA 
+smtp.host.qa:     192.168.2.230
+smtp.port.qa:     25
+smtp.from.qa:     controlQA@credicorpbank.com
+smtp.to.qa:       william.lopera@pranical.com, hapena@credicorpbank.com, con_vvasconez@credicorpbank.com, kramea@credicorpbank.com, scastillo@credicorpbank.com, con_marchibold@credicorpbank.com
+
+# SMTP para PROD 
+smtp.host.prod:     192.168.2.233
+smtp.port.prod:     25
+smtp.from.prod:     serviciosdenegocios@credicorpbank.com
+smtp.to.prod:       deptotransferencias@credicorpbank.com
+
+EMAIL_SUBJECT_SWIFT_UPDATE:    Generación del archivo Lote de Confirmaciones 
+EMAIL_TEMPLATE_SWIFT_UPDATE:   swift_update
